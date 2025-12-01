@@ -1,0 +1,15 @@
+{
+    "name": "jgnn/calculadora-php",
+    "description": "Calculadora OOP em PHP 8",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Calculadora\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    }
+}
