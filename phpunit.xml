@@ -22,13 +22,7 @@
             <html outputDirectory="coverage-report" />
             <clover outputFile="coverage.xml"/>
         </report>
-		
-		<exclude>
-		  <file>src/Operacoes/Dividir.php</file>
-		  <file>src/Operacoes/Multiplicar.php</file>
-		  <file>src/Operacoes/Somar.php</file>
-		  <file>src/Operacoes/Subtrair.php</file>
-		</exclude>
+
     </coverage>
 
 </phpunit>

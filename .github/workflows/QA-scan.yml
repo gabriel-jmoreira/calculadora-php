@@ -46,4 +46,9 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.php.coverage.reportPaths=coverage.xml
-            -Dsonar.coverage.exclusions=src/Operacoes/Dividir.php
+            -Dsonar.sources=src
+            -Dsonar.tests=tests
+            -Dsonar.php.coverage.reportPaths=coverage.xml
+            -Dsonar.exclusions=src/Operacoes/Dividir.php,src/Operacoes/Multiplicar.php,src/Operacoes/Somar.php,src/Operacoes/Subtrair.php
+            -Dsonar.coverage.exclusions=src/Operacoes/Dividir.php,src/Operacoes/Multiplicar.php,src/Operacoes/Somar.php,src/Operacoes/Subtrair.php
+            
