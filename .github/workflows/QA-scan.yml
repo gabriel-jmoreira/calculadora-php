@@ -1,7 +1,7 @@
 name: Full PHP Quality Analysis
 
 env:
-  PROJETO: CALCULADORA-PHP   # <--- visível para TODOS os jobs
+  PROJETO: CALCULADORA-PHP
 
 on:
   push:
@@ -21,6 +21,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Instalar PHP e dependências do Composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: xdebug   # ativa cobertura
+          extensions: mbstring
+
+      - name: Instalar dependências
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Rodar testes com cobertura
+        run: |
+          vendor/bin/phpunit --coverage-clover coverage.xml
+
       - name: Sonar Scanner CLI
         uses: SonarSource/sonarqube-scan-action@v5
         env:
@@ -32,3 +46,4 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.exclusions=**/.github/**,**/tests/**
+            -Dsonar.php.coverage.reportPaths=coverage.xml
