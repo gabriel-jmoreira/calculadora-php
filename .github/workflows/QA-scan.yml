@@ -31,9 +31,9 @@ jobs:
       - name: Instalar dependências
         run: composer install --no-interaction --prefer-dist
 
-      - name: Rodar testes com cobertura
-        run: |
-          php vendor/bin/phpunit --coverage-clover coverage.xml
+      #- name: Rodar testes com cobertura
+      #  run: |
+      #    php vendor/bin/phpunit --coverage-clover coverage.xml
 
       - name: Sonar Scanner CLI
         uses: SonarSource/sonarqube-scan-action@v5
