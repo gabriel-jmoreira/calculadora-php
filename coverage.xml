@@ -66,6 +66,6 @@
     <file name="C:\Users\mvojg\OneDrive\Documentos\GitHub\calculadora-php\src\Operacoes\Subtrair.php">
       <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="9" loc="115" ncloc="115" classes="9" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="23" coveredelements="23"/>
+    <metrics files="9" loc="115" ncloc="115" classes="5" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="23" coveredelements="23"/>
   </project>
 </coverage>
