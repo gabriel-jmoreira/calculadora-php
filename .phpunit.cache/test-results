@@ -1,1 +1,1 @@
-{"version":2,"defects":[],"times":{"SomaTest::testSomarValoresPositivos":0.012,"SomaTest::testSomarComZero":0,"SomaTest::testSomarValoresNegativos":0}}
+{"version":2,"defects":[],"times":{"SomaTest::testSomarValoresPositivos":0.071,"SomaTest::testSomarComZero":0.001,"SomaTest::testSomarValoresNegativos":0.001}}

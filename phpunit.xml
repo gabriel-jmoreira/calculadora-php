@@ -11,8 +11,15 @@
         </testsuite>
     </testsuites>
 
+    <source>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+    </source>
+
     <coverage>
         <report>
+            <html outputDirectory="coverage-report" />
             <clover outputFile="coverage.xml"/>
         </report>
     </coverage>
