@@ -41,7 +41,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=Gabriel Moreira
+            -Dsonar.organization=gabriel-jmoreira
             -Dsonar.projectKey=gabriel-jmoreira_calculadora-php
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.sources=src
